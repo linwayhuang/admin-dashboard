@@ -1,0 +1,60 @@
+.container {
+    --theme-accent-color: #1992D4;
+    --background-color: #E2E8F0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sideBar {
+    background-color: var(--theme-accent-color);
+    color: white;
+    padding: 15px;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 65px;
+}
+
+.sideBarName {
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sideBarName img {
+    width: 50px;
+}
+
+.menu {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.menu img {
+    width: 50px;
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+
+.menuFirst,.menuSecond {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main {
+    background-color: var(--background-color);
+}
+
