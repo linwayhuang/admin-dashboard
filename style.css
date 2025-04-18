@@ -169,7 +169,7 @@ button {
 .yourProject .card {
     border-left: 8px #F0B429 solid;
     border-radius: 8px;
-    box-shadow: 1px 1px 8px gray;
+    box-shadow: 1px 1px 4px gray;
     background-color: white;
     padding: 25px 30px;
     width: 310px;
@@ -205,3 +205,30 @@ button {
     grid-column: 2 / 3;
 }
 
+.announcements .card {
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px gray;
+    background-color: white;
+    padding: 35px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+
+.announcements .card p {
+    font-size: 1rem;
+    line-height: 0;
+}
+
+.announcements .card p + p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 15px;
+    color: #9D9D9D;
+}
+
+.announcements .cardInfo:nth-child(1),
+.announcements .cardInfo:nth-child(2) {
+    border-bottom: 1px solid #D2D2D2;
+}
