@@ -203,10 +203,6 @@ button {
     width: 25px;
 }
 
-.announcements {
-    /* grid-column: 2 / 3; */
-}
-
 .announcements .card,
 .trending .card {
     border-radius: 8px;
@@ -253,11 +249,8 @@ button {
     border-radius: 25px;
 }
 
-.trending .description { /**/
-    box-sizing: content-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.description p{ 
+    margin: 5px; /* Bring two p's together */
 }
 
 .trending .description p + p {
