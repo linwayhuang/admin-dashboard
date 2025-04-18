@@ -149,7 +149,7 @@ button {
     padding: 30px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
     gap: 40px;
 }
 
@@ -163,7 +163,9 @@ button {
 
 .yourProject .cardArea {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 0.5fr)); /**/
+    gap: 40px
+    
 }
 
 .yourProject .card {
@@ -172,7 +174,7 @@ button {
     box-shadow: 1px 1px 4px gray;
     background-color: white;
     padding: 25px 30px;
-    width: 310px;
+    /* width: 310px; */
     height: 170px;
     display: flex;
     flex-direction: column;
@@ -202,10 +204,11 @@ button {
 }
 
 .announcements {
-    grid-column: 2 / 3;
+    /* grid-column: 2 / 3; */
 }
 
-.announcements .card {
+.announcements .card,
+.trending .card {
     border-radius: 8px;
     box-shadow: 1px 1px 4px gray;
     background-color: white;
@@ -230,5 +233,36 @@ button {
 
 .announcements .cardInfo:nth-child(1),
 .announcements .cardInfo:nth-child(2) {
-    border-bottom: 1px solid #D2D2D2;
+    border-bottom: 1px solid #D2D2D2; /**/
+}
+
+.trending .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending .cardInfo {
+    display: flex;
+    justify-content: left;
+    align-items: center; /* This make the profile pic rounded */
+    gap: 25px
+}
+
+.trending img {
+    width: 70px;
+    border-radius: 25px;
+}
+
+.trending .description { /**/
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending .description p + p {
+    color: #D2D2D2;
+    font-weight: normal;
+    display: flex;
+    align-items: flex-start;
 }
